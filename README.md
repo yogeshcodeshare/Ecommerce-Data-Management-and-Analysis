@@ -50,14 +50,17 @@ Inventory:
     o	This transformation converts the last_updated and restocking_date columns to a standardized date and time format, facilitating consistent time-based analysis and comparisons.
 
 Promotions:
+
 •	Convert start_date and end_date to a standardized date format:
     o	This transformation converts the start_date and end_date columns to a standardized date format, enabling consistent analysis of promotion durations and comparisons.
 
 StoreLocations:
+
 •	Convert opening_time and closing_time to a standardized time format:
     o	This transformation converts the opening_time and closing_time columns to a standardized time format, allowing for consistent representation and analysis of store opening and closing hours.
 
 Suppliers:
+
 •	Trim leading and trailing whitespace from supplier_name, contact_person, and business_type:
     o	This transformation removes any unnecessary whitespace at the beginning or end of supplier_name, contact_person, and business_type, ensuring clean and consistent data.
     
@@ -68,6 +71,7 @@ Suppliers:
     o	This transformation converts all email addresses in the email column to lowercase, ensuring consistency and avoiding potential duplicates caused by case differences.
 
 DeliveryTracking:
+
 •	Convert estimated_delivery_date and actual_delivery_date to a standardized date format:
         o	This transformation converts the estimated_delivery_date and actual_delivery_date columns to a standardized date format, facilitating consistent analysis and comparison of delivery dates.
 
