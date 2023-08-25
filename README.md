@@ -73,7 +73,7 @@ Suppliers:
 DeliveryTracking:
 
 -	Convert estimated_delivery_date and actual_delivery_date to a standardized date format:
-        o	This transformation converts the estimated_delivery_date and actual_delivery_date columns to a standardized date format, facilitating consistent analysis and comparison of delivery dates.
+        --	This transformation converts the estimated_delivery_date and actual_delivery_date columns to a standardized date format, facilitating consistent analysis and comparison of delivery dates.
 
 Overall, this project's transformations lay the foundation for robust data engineering, enabling efficient data processing, analysis, and decision-making. The transformed datasets provide a reliable and consistent basis for further exploration, modeling, and extracting valuable insights to support business objectives and drive data-driven strategies.
 
