@@ -11,6 +11,178 @@ The project operates within these parameters:
 
 Here's a brief description of the columns in the provided tables:
 
+**Customers:**
+- customer_id: Unique identifier for each customer.
+- first_name: First name of the customer.
+- last_name: Last name of the customer.
+- email: Email address of the customer.
+- address: Physical address of the customer.
+- phone_number: Phone number of the customer.
+- registration_date: Date when the customer registered.
+- last_purchase_date: Date of the customer's last purchase.
+- gender: Gender of the customer.
+- date_of_birth: Date of birth of the customer.
+- nationality: Nationality of the customer.
+- occupation: Occupation or profession of the customer.
+- preferred_language: Preferred language of the customer.
+- loyalty_points: Loyalty points accumulated by the customer.
+- registration_channel: Channel through which the customer registered.
+- marketing_opt_in: Indicates whether the customer opted in for marketing communications.
+- last_login_date: Date of the customer's last login.
+- subscription_status: Status of the customer's subscription.
+- loyalty_tier: Loyalty tier of the customer.
+- referral_source: Source through which the customer was referred.
+- social_media_handles: Social media handles associated with the customer.
+- customer_segment: Segment or category to which the customer belongs.
+
+ **Products:**
+- product_id: Unique identifier for each product.
+- product_name: Name of the product.
+- category: Category or type of the product.
+- brand: Brand of the product.
+- description: Description or details of the product.
+- price: Price of the product.
+- discount_percentage: Percentage discount applied to the product.
+- stock_quantity: Quantity of the product in stock.
+- created_date: Date when the product was created.
+- weight: Weight of the product.
+- dimensions: Dimensions of the product.
+- color: Color of the product.
+- material: Material used to make the product.
+- manufacturer: Manufacturer of the product.
+- supplier_id: Unique identifier for the supplier of the product.
+-average_rating: Average rating given by customers for the product.
+- customer_reviews_count: Number of customer reviews for the product.
+- is_featured: Indicates whether the product is featured.
+- is_new_arrival: Indicates whether the product is a new arrival.
+- is_on_sale: Indicates whether the product is on sale.
+
+**Transactions:**
+- transaction_id: Unique identifier for each transaction.
+- customer_id: Identifier of the customer associated with the transaction.
+- product_id: Identifier of the product involved in the transaction.
+- quantity: Quantity of the product purchased.
+- timestamp: Timestamp of the transaction.
+- payment_method: Method used for payment.
+- subtotal: Subtotal amount of the transaction.
+- tax_amount: Tax amount applied to the transaction.
+- total_amount: Total amount of the transaction.
+- shipping_address: Address for shipping the products.
+- billing_address: Billing address for the transaction.
+- delivery_notes: Additional notes or instructions for delivery.
+- is_gift: Indicates whether the transaction is a gift.
+- gift_message: Message attached to the gift, if applicable.
+- is_returned: Indicates whether the transaction was returned.
+- return_reason: Reason for returning the transaction.
+- refunded_amount: Amount refunded for the returned transaction.
+- currency: Currency used for the transaction.
+- exchange_rate: Exchange rate for currency conversion.
+- order_status: Status of the order.
+- fulfillment_status: Status of order fulfillment.
+- is_cancelled: Indicates whether the transaction was cancelled.
+- cancellation_reason: Reason for cancelling the transaction.
+- payment_status: Status of the payment.
+- shipping_method: Method used for shipping.
+- tax_rate: Tax rate applied to the transaction.
+
+
+**Inventory:**
+- product_id: Identifier of the product in inventory.
+- location: Location where the product is stored.
+- quantity: Quantity of the product in inventory.
+- last_updated: Timestamp of the last update to the inventory.
+- replenishment_threshold: Threshold quantity for replenishment.
+- maximum_stock_quantity: Maximum allowable stock quantity.
+- minimum_stock_quantity: Minimum required stock quantity.
+- reserved_quantity: Quantity of the product reserved for specific purposes.
+- damaged_quantity: Quantity of the product that is damaged.
+- obsolete_quantity: Quantity of the product that is considered obsolete.
+- restocking_date: Date for restocking the product.
+- stock_alerts_enabled: Indicates whether stock alerts are enabled.
+- stock_alert_threshold: Threshold quantity for triggering stock alerts.
+- stock_alert_notification_emails: Email addresses to receive stock alert notifications.
+- stock_location: Location or facility where the stock is stored.
+- storage_conditions: Conditions or requirements for storage.
+- storage_temperature: Temperature requirement for storage.
+- storage_humidity: Humidity requirement for storage.
+- is_batched: Indicates whether the product is batched or serialized.
+- batch_number: Number or identifier for the product batch.
+
+
+**Promotions:**
+- promotion_id: Unique identifier for each promotion.
+- product_id: Identifier of the product associated with the promotion.
+- start_date: Start date of the promotion.
+- end_date: End date of the promotion.
+- discount_percentage: Percentage discount offered in the promotion.
+- description: Description or details of the promotion.
+- promotion_name: Name or title of the promotion.
+- promotion_type: Type or category of the promotion.
+- target_customers: Target customers for the promotion.
+- redemption_limit: Limit on the number of times the promotion can be redeemed.
+- discount_type: Type of discount applied in the promotion.
+- applicable_products: Products to which the promotion is applicable.
+- applicable_categories: Categories to which the promotion is applicable.
+- promotion_terms: Terms and conditions associated with the promotion.
+
+
+**StoreLocations:**
+- store_id: Unique identifier for each store location.
+- store_name: Name of the store.
+- address: Physical address of the store.
+- city: City where the store is located.
+- state: State where the store is located.
+- country: Country where the store is located.
+- postal_code: Postal code of the store's location.
+- manager_name: Name of the store manager.
+- store_phone_number: Phone number of the store.
+- opening_time: Time when the store opens.
+- closing_time: Time when the store closes.
+- store_capacity: Capacity or maximum number of customers the store can accommodate.
+- store_area: Area or size of the store.
+- store_rating: Rating of the store.
+- parking_availability: Indicates whether parking is available at the store.
+- wheelchair_accessible: Indicates whether the store is wheelchair accessible.
+- fitting_rooms_count: Number of fitting rooms available in the store.
+- cash_desks_count: Number of cash desks or checkout counters in the store.
+- store_services: Services provided by the store.
+- store_features: Special features or amenities of the store.
+
+
+**Suppliers:**
+- supplier_id: Unique identifier for each supplier.
+- supplier_name: Name of the supplier.
+- contact_person: Person to contact at the supplier's organization.
+- phone_number: Phone number of the supplier.
+- email: Email address of the supplier.
+- address: Physical address of the supplier.
+- contact_number: Contact number for the supplier.
+- company_website: Website of the supplier's company.
+- tax_id: Tax ID or identification number of the supplier.
+- business_type: Type of business conducted by the supplier.
+- payment_terms: Terms and conditions for payment to the supplier.
+- preferred_contact_time: Preferred time for contact with the supplier.
+- supplier_notes: Additional notes or information about the supplier.
+- supplier_rating: Rating of the supplier.
+- supplier_reviews_count: Number of reviews or feedback received for the supplier.
+
+
+**DeliveryTracking:**
+- delivery_id: Unique identifier for each delivery.
+- order_id: Identifier of the order associated with the delivery.
+- carrier: Delivery carrier or shipping company.
+- status: Status of the delivery.
+- estimated_delivery_date: Estimated date of delivery.
+- actual_delivery_date: Actual date of delivery.
+- shipping_address: Address for shipping the order.
+- pickup_address: Address for picking up the order.
+- delivery_notes: Additional notes or instructions for the delivery.
+- is_gift: Indicates whether the delivery is a gift.
+- gift_message: Message attached to the gift, if applicable.
+- delivery_vehicle_type: Type of vehicle used for delivery.
+- delivery_driver_name: Name of the delivery driver.
+- driver_contact_number: Contact number of the delivery driver.
+- delivery_rating: Rating given to the delivery service.
 
 # Business Logic:
 DataHarmonize operates on a sound business logic foundation:
